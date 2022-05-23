@@ -15,7 +15,7 @@
 
 body {
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -78,6 +78,7 @@ header nav a:hover {
     padding: 15px 30px;
     margin-right: 15px;
     font-style: 12px;
+    
 
     cursor: pointer;
     transition: .3s ease all;
@@ -98,4 +99,14 @@ header nav a:hover {
 
 .filme-principal .container {
     width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
 }
