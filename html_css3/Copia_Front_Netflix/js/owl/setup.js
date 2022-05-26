@@ -14,12 +14,17 @@
         }
     }
 }) */
-var owl = $('.owl-carousel');
+var owl = $('#primeiro-carrosel');
+
+var owl2 = $('#segundo-carrosel');
+
+// 
 
 owl.owlCarousel({
     loop:true,
     nav:false,
-    margin:20,
+    dots:false,
+    margin:50,
     responsive:{
         0:{
             items:1
@@ -36,11 +41,47 @@ owl.owlCarousel({
     }
 });
 
+// 
+
+owl2.owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    margin:50,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },            
+        960:{
+            items:5
+        },
+        1200:{
+            items:6
+        }
+    }
+});
+
+// 
+
 owl.on('mousewheel', '.owl-stage', function (e) {
     if (e.deltaY>0) {
         owl.trigger('next.owl');
     } else {
         owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+
+// 
+
+owl2.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl2.trigger('next.owl');
+    } else {
+        owl2.trigger('prev.owl');
     }
     e.preventDefault();
 });
