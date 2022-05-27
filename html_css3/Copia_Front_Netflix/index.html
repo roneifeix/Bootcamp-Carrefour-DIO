@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETFLIX - CLONE</title>
     <link rel="stylesheet" href="style/main.css">
-    
+
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/fd8010f50c.js" crossorigin="anonymous"></script>
-    
+
     <!-- RESPONSIVIDADE -->
     <link rel="stylesheet" href="style/responsive.css">
 
@@ -23,21 +23,31 @@
     <header>
         <div class="container">
             <h2 class="logo">NETFLIX</h2>
-            <nav>
-
+            <div id="hamburguer-icon">
+                <button type="button" onclick="showNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <nav id="navbar">
                 <a href="#">INÍCIO</a>
                 <a href="#">SÉRIES</a>
                 <a href="#">FILMES</a>
                 <a href="#">DOCUMENTÁRIOS</a>
                 <!-- CONFIGURAR COM JAVASCRIPT -->
-                <div id="nav-button-space">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div id="search-icon">
+                    <button onclick="showSearchBox(true)">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
                 <!-- CAIXA DE PESQUISA -->
-                <div id="search-container"  style="display: none;">
-                    <button type="submit"><i class="fa-solid fa-xmark"></i></button>
+                <div id="search-box" style="display: none;">
+                    <button onclick="showSearchBox(false)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                     <input type="search" name="" id="">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -66,8 +76,6 @@
     </main>
 
     <div class="carrosel-filmes">
-        <hr>
-        <hr>
         <hr>
         <h3>NOVIDADES...</h3>
         <div class="owl-carousel owl-theme" id="primeiro-carrosel">
@@ -134,6 +142,9 @@
         NETFLIX - 2022
     </footer>
 
+    <!-- JAVASCRIPT -->
+    <script src="js/navMenu-responsivo.js"></script>
+    <script src="js/searchBox-actions.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/jquery.mousewheel.min.js"></script>
