@@ -11,4 +11,6 @@ Nesta atividade, vamos criar uma página que carrega fotos aleatórias de gatinh
 
 ## Demo
 
+https://roneifeix.github.io/Bootcamp-Carrefour-DIO/javascript/javascript-assíncrono/
+
 ![catAPI](./api-cats.gif)
