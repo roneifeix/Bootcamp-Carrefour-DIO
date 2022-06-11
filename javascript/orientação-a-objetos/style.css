@@ -1,0 +1,67 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Fira Code Light';
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    font-size: 1.2rem;
+}
+
+.nav {
+    visibility: hidden;
+    width: 8rem;
+    list-style: none;
+    position: fixed;
+    border: 2px solid #77a;
+    border-radius: .5rem;
+    text-align: start;
+    padding: .5rem;
+}
+
+.nav li {
+    /* border: 1px solid red; */
+    padding: 3px;
+    padding-left: .75rem;
+}
+
+hr {
+    border-color: #77a;
+}
+
+.nav li:hover {
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+/* ******* */
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select,
+select>option,
+input {
+    padding: .25rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+}
+
+select {
+    margin-top: 1rem;
+}
